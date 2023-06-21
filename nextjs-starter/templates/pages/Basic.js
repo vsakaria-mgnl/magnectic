@@ -1,5 +1,5 @@
 import { EditableArea, EditableComponent } from '@magnolia/react-editor';
-import { useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { renderHomeHeader } from './Home';
 import Footer from '../components/Footer';
 
@@ -8,7 +8,7 @@ function Basic(props) {
 
 	const [header, setHeader] = useState();
 
-	useLayoutEffect(() => {
+	useEffect(() => {
 		setHeader(JSON.parse(sessionStorage.getItem('header')));
 	}, []);
 
