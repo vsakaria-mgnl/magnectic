@@ -6,6 +6,6 @@ form:
             $type: textField
             i18n: true
         buttonText:
-            label: Button Text
+            label: Submit button Text
             $type: textField
             i18n: true
